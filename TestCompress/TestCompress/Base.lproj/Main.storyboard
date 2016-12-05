@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AvY-f5-bPB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="EeV-Cl-8KV">
+            <objects>
+                <navigationController id="AvY-f5-bPB" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qfJ-9z-GSn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P7s-Os-Hru"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wfa-Z2-hq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192" y="-383"/>
+        </scene>
+        <!--视频处理-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkb-b7-OMK">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="wJf-GZ-4xU"/>
+                                </constraints>
+                                <state key="normal" title="压缩视频">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selecteVideoButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5k-zP-vCd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGz-OH-I5z">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="bbz-cb-oYl"/>
+                                </constraints>
+                                <state key="normal" title="编辑视频">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addWatermarkClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Rn-X1-wYD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX4-VU-eD1">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="O6l-qT-9VL"/>
+                                </constraints>
+                                <state key="normal" title="滤镜">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="filterButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d0Y-IT-dM6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq0-4E-588">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="UuD-da-RBB"/>
+                                </constraints>
+                                <state key="normal" title="DIY图片">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="diyImageClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBV-oi-9uo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEn-EZ-Fiv">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="HvS-9L-h84"/>
+                                </constraints>
+                                <state key="normal" title="图片加密解密">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageDES:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RgI-zY-I3e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBU-3C-GB7">
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9bG-lL-WMc"/>
+                                </constraints>
+                                <state key="normal" title="图片预览">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="bigImageViewClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="so8-ix-iZP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RBU-3C-GB7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="7CI-Qk-PoP"/>
+                            <constraint firstItem="RBU-3C-GB7" firstAttribute="top" secondItem="aEn-EZ-Fiv" secondAttribute="bottom" constant="17" id="8VA-Hz-RaH"/>
+                            <constraint firstItem="zGz-OH-I5z" firstAttribute="top" secondItem="gkb-b7-OMK" secondAttribute="bottom" constant="19" id="8m4-Um-Mkz"/>
+                            <constraint firstAttribute="trailing" secondItem="aEn-EZ-Fiv" secondAttribute="trailing" constant="16" id="8vH-vZ-aOQ"/>
+                            <constraint firstItem="kq0-4E-588" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Q31-gg-11P"/>
+                            <constraint firstAttribute="trailing" secondItem="RBU-3C-GB7" secondAttribute="trailing" constant="16" id="QWw-Z3-Ya5"/>
+                            <constraint firstItem="gkb-b7-OMK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="Qid-4z-Axy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gkb-b7-OMK" secondAttribute="trailing" id="UKF-Gu-VTE"/>
+                            <constraint firstItem="aX4-VU-eD1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="V7x-vr-pLG"/>
+                            <constraint firstItem="aX4-VU-eD1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xzl-rQ-JPe"/>
+                            <constraint firstItem="kq0-4E-588" firstAttribute="top" secondItem="aX4-VU-eD1" secondAttribute="bottom" constant="19" id="ZQ5-uW-ToT"/>
+                            <constraint firstItem="aEn-EZ-Fiv" firstAttribute="top" secondItem="kq0-4E-588" secondAttribute="bottom" constant="19" id="Zfy-AV-0zP"/>
+                            <constraint firstItem="zGz-OH-I5z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="abF-n2-rGA"/>
+                            <constraint firstItem="aEn-EZ-Fiv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="bYX-u9-zE2"/>
+                            <constraint firstItem="kq0-4E-588" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="doG-Zh-YUe"/>
+                            <constraint firstItem="aX4-VU-eD1" firstAttribute="top" secondItem="zGz-OH-I5z" secondAttribute="bottom" constant="19" id="nMt-wP-azL"/>
+                            <constraint firstItem="gkb-b7-OMK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sYy-PA-sd5"/>
+                            <constraint firstItem="zGz-OH-I5z" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ulQ-ma-OlG"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="视频处理" id="gqN-kC-e5F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="-384"/>
+        </scene>
+    </scenes>
+</document>

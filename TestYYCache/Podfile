@@ -1,0 +1,2 @@
+target 'TestYYCache'
+pod 'YYCache', '~> 1.0.3'

@@ -292,9 +292,163 @@ print(triangleAndSquare.triangle.sideLength)
 triangleAndSquare.square = Square(sideLength: 50, name: "larger square")
 print(triangleAndSquare.square.sideLength)
 
+let optionalSquare: Square? = Square(sideLength:2.5, name:"optionarl square")
+let sideLength = optionalSquare?.sideLength
 
+// 枚举和结构体
+enum Rank:Int{
+    case Ace = 1
+    case Two, Three,Four, Five, Six, Seven, Eight, Nine, Ten
+    case Jack, Queen, King
+    
+        func simpleyDescription() -> String {
+        switch self {
+        case .Ace:
+            return "ace"
+            
+        case .Jack:
+            return "jack"
+            
+        case .Queen:
+            return "queen"
+            
+        case .King:
+            return "king"
+        default:
+            return String(self.rawValue)
+        }
+    }
+}
+let ace = Rank.Ace
+let aceRawValue = ace.rawValue
 
+if let convertedRank = Rank(rawValue: 3){
+    let threeDescription = convertedRank.simpleyDescription()
+}
 
+enum Suit{
+    case Spades, Hearts, Diamonds, Clubs
+    func simpleDescription() -> String {
+        switch self {
+        case .Spades:
+            return "spades"
+        case .Hearts:
+            return "hearts"
+        case .Diamonds:
+            return "diamonds"
+        case .Clubs:
+            return "clubs"
+        }
+    }
+}
+let hearts = Suit.Hearts
+let heartsDescription = hearts.simpleDescription()
 
+enum ServerResponse{
+    case Result(String, String)
+    case Failure(String)
+}
+let success = ServerResponse.Result("6pm", "8pm")
+let failure = ServerResponse.Failure("out of cheese")
+switch success {
+case let .Result(sunrise, sunset):
+    let serverResponse = "Sunrise is at \(sunrise) and sunset is at \(sunset)"
+case let .Failure(message):
+    print("Failure ... \(message)")
+}
 
+struct Card{
+    var rank:Rank
+    var suit:Suit
+    func simpleDescription() -> String {
+        return "The \(rank.simpleyDescription()) of \(suit.simpleDescription())"
+    }
+}
+let threeOfSpades = Card(rank: .Three, suit: .Spades)
+let threeOFSpadesDescription = threeOfSpades.simpleDescription()
 
+// 协议和扩展
+protocol ExampleProtocol {
+    var simpleDescription: String {get}
+    mutating func adjust()
+}
+
+class SimpleClass: ExampleProtocol {
+    var simpleDescription: String = "A very simple class"
+    var anotherProperty:Int = 7878
+    func adjust() {
+        simpleDescription += " now 100% adjusted"
+    }
+}
+var a = SimpleClass()
+a.adjust()
+let aDescription = a.simpleDescription
+
+// Int类型 协议扩展
+extension Int:ExampleProtocol {
+    var simpleDescription:String {
+        return "the number \(self)"
+    }
+    
+    mutating func adjust(){
+        self += 42;
+    }
+}
+print(7.simpleDescription)
+
+// 错误处理
+enum PrinterError:Error {
+    case OutOfPaper
+    case Notoner
+    case OnFire
+}
+
+func send(job:Int, toPriter printerName:String) throws -> String {
+    if printerName == "Never has Toner"{
+        throw PrinterError.Notoner
+    }
+    return "job sent"
+}
+
+do{
+    let printerResponse = try send(job:1040, toPriter:"BiSheng")
+    print(printerResponse)
+}catch{
+    print(error)
+}
+
+var fridgelsOpen = false
+let fridgeContent = ["mile","eggs","leftovers"]
+
+func fridgeContains(_ food:String) -> Bool{
+    fridgelsOpen = true
+    defer{
+        fridgelsOpen = false
+    }
+    
+    let result = fridgeContent.contains(food)
+    return result
+}
+
+fridgeContains("banana")
+print(fridgelsOpen)
+
+// 泛型
+func repeatItem<Item>(repeating item:Item, numberOftimes:Int) -> [Item]{
+    var result = [Item]()
+    for _ in 0..<numberOftimes{
+        result.append(item)
+    }
+    return result
+}
+
+repeatItem(repeating: "knock", numberOftimes: 4)
+
+// 重新实现Swift标准库中的可选类型
+enum OptionalValue<Wrapped> {
+    case None
+    case Some(Wrapped)
+}
+
+var possibleInterger: OptionalValue<Int> = .None
+possibleInterger = .Some(100)

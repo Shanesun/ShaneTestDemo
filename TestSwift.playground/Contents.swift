@@ -452,3 +452,62 @@ enum OptionalValue<Wrapped> {
 
 var possibleInterger: OptionalValue<Int> = .None
 possibleInterger = .Some(100)
+
+// Swift 基础语法
+let possibleString: String? = "An optional String"
+
+var airports = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
+if let oldValue = airports.updateValue("tt", forKey: "DUB"){
+    print("the old value for DUB was \(oldValue)")
+}
+
+airports["APL"] = "Apple internation"
+airports["APL"] = nil
+
+if let removedValue = airports.removeValue(forKey: "DUB"){
+    print("the removed airport's name is \(removedValue)")
+}
+else{
+    print("The airports dictionary does not contain a value for DUB")
+}
+
+let intergerToDescribe = 5
+var description  = "The number \(intergerToDescribe)"
+switch intergerToDescribe {
+case 2,3,5,7:
+    description += " a prime number , and also"
+    fallthrough
+default:
+    description += " an integer"
+}
+
+print(description)
+
+func greet(_ person:[String:String]){
+    guard let name = person["name"] else {
+        return
+    }
+    print("Hello \(name)")
+    guard let location = person["location"] else {
+        print("i hope the weather is nice near you")
+        return
+    }
+    
+    print("i hope the weather is nice in \(location)")
+}
+greet(["name":"john"])
+
+if #available(iOS 10, *){
+    
+}
+
+// 函数
+
+func greet(person: String) -> String {
+    let greeting = "hello" + person + "!"
+    return greeting
+}
+
+
+
+

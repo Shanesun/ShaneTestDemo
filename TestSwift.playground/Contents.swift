@@ -502,7 +502,6 @@ if #available(iOS 10, *){
 }
 
 // 函数
-
 func greet(person: String) -> String {
     let greeting = "hello" + person + "!"
     return greeting

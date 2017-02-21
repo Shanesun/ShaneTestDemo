@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="VideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcJ-HY-fst">
+                        <rect key="frame" x="8" y="8" width="304" height="183.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uD-1m-wJw">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="183.5"/>
+                                <state key="normal" image="play_button"/>
+                                <connections>
+                                    <action selector="playVideoButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZEW-Vr-gn1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7uD-1m-wJw" secondAttribute="trailing" id="1iv-oy-zjb"/>
+                            <constraint firstItem="7uD-1m-wJw" firstAttribute="leading" secondItem="AcJ-HY-fst" secondAttribute="leading" id="6jV-P7-l92"/>
+                            <constraint firstAttribute="bottom" secondItem="7uD-1m-wJw" secondAttribute="bottom" id="DBO-Af-7zV"/>
+                            <constraint firstItem="7uD-1m-wJw" firstAttribute="top" secondItem="AcJ-HY-fst" secondAttribute="top" id="dL5-KV-OmG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="AcJ-HY-fst" secondAttribute="bottom" id="4qw-mY-UZE"/>
+                    <constraint firstItem="AcJ-HY-fst" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Bzu-Tb-7Uj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AcJ-HY-fst" secondAttribute="trailing" id="mje-at-pMV"/>
+                    <constraint firstItem="AcJ-HY-fst" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="n3H-ED-ee9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="playView" destination="AcJ-HY-fst" id="zeB-rW-Lxe"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="-189"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play_button" width="37" height="37"/>
+    </resources>
+</document>

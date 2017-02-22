@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  SSMultimediaDataFlowDemo
+//  TestAnimation
 //
-//  Created by Shane on 2017/2/21.
+//  Created by Shane on 2017/2/22.
 //  Copyright © 2017年 Shane. All rights reserved.
 //
 
@@ -12,7 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (nonatomic) BOOL canAutoRotation;
 
 @end
 

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  SSMultimediaDataFlowDemo
+//  TestAnimation
 //
-//  Created by Shane on 2017/2/21.
+//  Created by Shane on 2017/2/22.
 //  Copyright © 2017年 Shane. All rights reserved.
 //
 
@@ -47,12 +47,5 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
-{
-    if(self.canAutoRotation)
-        return UIInterfaceOrientationMaskAll;
-    else
-        return UIInterfaceOrientationMaskPortrait;
-}
 
 @end

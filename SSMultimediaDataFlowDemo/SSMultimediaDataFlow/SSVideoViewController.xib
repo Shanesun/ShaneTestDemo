@@ -34,9 +34,9 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uml-tg-mYG">
-                                    <rect key="frame" x="0.0" y="0.0" width="60" height="64"/>
+                                    <rect key="frame" x="0.0" y="20" width="80" height="44"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="60" id="1hX-nv-6K6"/>
+                                        <constraint firstAttribute="width" constant="80" id="1hX-nv-6K6"/>
                                     </constraints>
                                     <state key="normal" title="返回"/>
                                     <connections>
@@ -49,7 +49,7 @@
                                 <constraint firstAttribute="bottom" secondItem="uml-tg-mYG" secondAttribute="bottom" id="MXX-Pr-gBT"/>
                                 <constraint firstAttribute="height" constant="64" id="PLR-8W-41w"/>
                                 <constraint firstItem="uml-tg-mYG" firstAttribute="leading" secondItem="yZi-ym-XDm" secondAttribute="leading" id="PmJ-5t-OW4"/>
-                                <constraint firstItem="uml-tg-mYG" firstAttribute="top" secondItem="yZi-ym-XDm" secondAttribute="top" id="vU2-wl-TDH"/>
+                                <constraint firstItem="uml-tg-mYG" firstAttribute="top" secondItem="yZi-ym-XDm" secondAttribute="top" constant="20" id="vU2-wl-TDH"/>
                             </constraints>
                         </view>
                     </subviews>

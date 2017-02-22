@@ -7,6 +7,7 @@
 //
 
 #import "SSVideoViewController.h"
+#import "AppDelegate.h"
 
 @interface SSVideoViewController ()
 
@@ -14,9 +15,23 @@
 
 @implementation SSVideoViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    AppDelegate* appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    appDelegate.canAutoRotation = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    AppDelegate* appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    appDelegate.canAutoRotation = NO;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,8 +41,17 @@
 
 - (IBAction)backButtonClicked:(UIButton *)sender
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if ([UIDevice currentDevice].orientation != UIInterfaceOrientationPortrait) {
+        NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
+        [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self dismissViewControllerAnimated:YES completion:nil];
+        });
+    }
+    else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
-
 
 @end

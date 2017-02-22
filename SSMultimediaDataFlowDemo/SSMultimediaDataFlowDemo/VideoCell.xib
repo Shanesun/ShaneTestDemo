@@ -16,14 +16,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcJ-HY-fst">
-                        <rect key="frame" x="8" y="8" width="304" height="183.5"/>
+                        <rect key="frame" x="8" y="8" width="304" height="184"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lena512.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="g2E-W7-GoE">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="184"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uD-1m-wJw">
-                                <rect key="frame" x="0.0" y="0.0" width="304" height="183.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="184"/>
                                 <state key="normal" image="play_button"/>
                                 <connections>
                                     <action selector="playVideoButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZEW-Vr-gn1"/>
@@ -33,9 +36,13 @@
                         <color key="backgroundColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="7uD-1m-wJw" secondAttribute="trailing" id="1iv-oy-zjb"/>
+                            <constraint firstItem="g2E-W7-GoE" firstAttribute="leading" secondItem="AcJ-HY-fst" secondAttribute="leading" id="4rt-5I-P9Z"/>
                             <constraint firstItem="7uD-1m-wJw" firstAttribute="leading" secondItem="AcJ-HY-fst" secondAttribute="leading" id="6jV-P7-l92"/>
                             <constraint firstAttribute="bottom" secondItem="7uD-1m-wJw" secondAttribute="bottom" id="DBO-Af-7zV"/>
                             <constraint firstItem="7uD-1m-wJw" firstAttribute="top" secondItem="AcJ-HY-fst" secondAttribute="top" id="dL5-KV-OmG"/>
+                            <constraint firstItem="g2E-W7-GoE" firstAttribute="top" secondItem="AcJ-HY-fst" secondAttribute="top" id="dYG-uM-UAN"/>
+                            <constraint firstAttribute="bottom" secondItem="g2E-W7-GoE" secondAttribute="bottom" id="ggt-0w-2bh"/>
+                            <constraint firstAttribute="trailing" secondItem="g2E-W7-GoE" secondAttribute="trailing" id="p64-Xi-bw1"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -53,6 +60,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="lena512.jpg" width="512" height="512"/>
         <image name="play_button" width="37" height="37"/>
     </resources>
 </document>

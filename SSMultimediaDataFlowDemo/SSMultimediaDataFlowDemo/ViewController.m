@@ -9,12 +9,12 @@
 #import "ViewController.h"
 #import "SSVideoViewController.h"
 #import "VideoCell.h"
-#import "VideoPresentTransition.h"
+#import "MoveFullTransition.h"
 
 @interface ViewController ()<VideoCellPlayDelegate ,UIViewControllerTransitioningDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property(nonatomic,strong)VideoPresentTransition *presentTransition;
+@property (nonatomic,strong) MoveFullPresentTransition *presentTransition;
 
 @end
 
@@ -50,34 +50,23 @@
 - (void)videoCell:(VideoCell *)videoCell playView:(UIView *)playView playStatu:(int)playStatu
 {
     SSVideoViewController *videoVC = [[SSVideoViewController alloc] init];
-//    videoVC.modalPresentationStyle = UIModalPresentationCustom;
     videoVC.transitioningDelegate = self;
+  
     
-    CGRect playViewFrame = [videoCell convertRect:playView.frame toView:self.view];
-    
-    UIView *newView = [UIView new];
-    newView.frame = playViewFrame;
-    newView.backgroundColor = [UIColor blueColor];
-    UIImageView *videoPlayer = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"lena512.jpg"]];
-    videoPlayer.contentMode = UIViewContentModeScaleAspectFit;
-    [newView addSubview:videoPlayer];
-    [videoPlayer mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.leading.bottom.trailing.equalTo(newView);
-    }];
-    
-    self.presentTransition = [[VideoPresentTransition alloc] initWithVideoView:newView];
+    self.presentTransition = [MoveFullPresentTransition shared];
+    self.presentTransition.videoBackgroundView = playView;
     
     [self presentViewController:videoVC animated:YES completion:nil];
-    
-    
-    
 }
-
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
     return self.presentTransition;
 }
 
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    return [MoveFullDismissTransition new];
+}
 
 @end

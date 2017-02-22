@@ -12,4 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIView *backgroundView;
 
+@property (strong, nonatomic) UIView *playerView;
+
 @end

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3417C53E1E5C5B0F00BD878C /* lena512.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3417C53D1E5C5B0F00BD878C /* lena512.jpg */; };
 		3481220D1E5D723F00EF4429 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3481220C1E5D723F00EF4429 /* TestViewController.m */; };
+		3481220F1E5E7CFC00EF4429 /* Video.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3481220E1E5E7CFC00EF4429 /* Video.plist */; };
+		348122111E5EC56000EF4429 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348122101E5EC56000EF4429 /* AVFoundation.framework */; };
+		348122131E5EC79900EF4429 /* av.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 348122121E5EC79900EF4429 /* av.jpg */; };
+		348122151E5EC82D00EF4429 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348122141E5EC82D00EF4429 /* AVKit.framework */; };
 		3488D5BE1E5BDD2B007C309D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3488D5BD1E5BDD2B007C309D /* main.m */; };
 		3488D5C11E5BDD2B007C309D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3488D5C01E5BDD2B007C309D /* AppDelegate.m */; };
 		3488D5C41E5BDD2B007C309D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3488D5C31E5BDD2B007C309D /* ViewController.m */; };
@@ -27,6 +31,10 @@
 		3417C53D1E5C5B0F00BD878C /* lena512.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lena512.jpg; sourceTree = "<group>"; };
 		3481220B1E5D723F00EF4429 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		3481220C1E5D723F00EF4429 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		3481220E1E5E7CFC00EF4429 /* Video.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Video.plist; sourceTree = "<group>"; };
+		348122101E5EC56000EF4429 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		348122121E5EC79900EF4429 /* av.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = av.jpg; sourceTree = "<group>"; };
+		348122141E5EC82D00EF4429 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		3488D5B91E5BDD2B007C309D /* SSMultimediaDataFlowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSMultimediaDataFlowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3488D5BD1E5BDD2B007C309D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3488D5BF1E5BDD2B007C309D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348122151E5EC82D00EF4429 /* AVKit.framework in Frameworks */,
+				348122111E5EC56000EF4429 /* AVFoundation.framework in Frameworks */,
 				36D57A202DB987B269F75E0E /* Pods_SSMultimediaDataFlowDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,9 +115,11 @@
 				3488D5C81E5BDD2B007C309D /* Assets.xcassets */,
 				3488D5CA1E5BDD2B007C309D /* LaunchScreen.storyboard */,
 				3488D5CD1E5BDD2B007C309D /* Info.plist */,
+				3481220E1E5E7CFC00EF4429 /* Video.plist */,
 				3488D5BC1E5BDD2B007C309D /* Supporting Files */,
 				3481220B1E5D723F00EF4429 /* TestViewController.h */,
 				3481220C1E5D723F00EF4429 /* TestViewController.m */,
+				348122121E5EC79900EF4429 /* av.jpg */,
 			);
 			path = SSMultimediaDataFlowDemo;
 			sourceTree = "<group>";
@@ -135,6 +147,8 @@
 		D557B6743FD273356095E656 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				348122141E5EC82D00EF4429 /* AVKit.framework */,
+				348122101E5EC56000EF4429 /* AVFoundation.framework */,
 				5D59D5F05B249FC02776706A /* Pods_SSMultimediaDataFlowDemo.framework */,
 			);
 			name = Frameworks;
@@ -206,7 +220,9 @@
 				3488D5D81E5BDEFB007C309D /* VideoCell.xib in Resources */,
 				3488D5C91E5BDD2B007C309D /* Assets.xcassets in Resources */,
 				3488D5C71E5BDD2B007C309D /* Main.storyboard in Resources */,
+				348122131E5EC79900EF4429 /* av.jpg in Resources */,
 				3417C53E1E5C5B0F00BD878C /* lena512.jpg in Resources */,
+				3481220F1E5E7CFC00EF4429 /* Video.plist in Resources */,
 				3488D5DD1E5BE3F0007C309D /* SSVideoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

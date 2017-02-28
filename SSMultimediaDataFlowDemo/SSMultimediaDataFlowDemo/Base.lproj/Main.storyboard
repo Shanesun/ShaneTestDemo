@@ -59,36 +59,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K14-kV-Dhr">
-                                <rect key="frame" x="140" y="20" width="94" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.83921568629999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMa-S1-dA8">
-                                <rect key="frame" x="16" y="637" width="343" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="av.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mCC-20-GPG">
+                                <rect key="frame" x="0.0" y="60" width="375" height="212"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="E95-Gm-GhI"/>
+                                    <constraint firstAttribute="height" constant="212" id="al0-YB-Xbh"/>
                                 </constraints>
-                                <state key="normal" title="moveAndChangeSize"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jb-GF-MgD">
+                                <rect key="frame" x="16" y="627" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="r2A-Uz-tpg"/>
+                                </constraints>
+                                <state key="normal" title="pause"/>
                                 <connections>
-                                    <action selector="buttonClicked:" destination="fDM-rk-q97" eventType="touchUpInside" id="Tat-Dl-y92"/>
+                                    <action selector="pauseButtonClicked:" destination="fDM-rk-q97" eventType="touchUpInside" id="Dkk-mW-g8I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWU-Py-hGd">
+                                <rect key="frame" x="16" y="557" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mch-DZ-KKa"/>
+                                </constraints>
+                                <state key="normal" title="play">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="fDM-rk-q97" eventType="touchUpInside" id="iCd-Xn-cdh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ZMa-S1-dA8" firstAttribute="leading" secondItem="NKB-A3-f7u" secondAttribute="leadingMargin" id="Yza-z2-lFZ"/>
-                            <constraint firstItem="j6O-77-EVS" firstAttribute="top" secondItem="ZMa-S1-dA8" secondAttribute="bottom" id="qAf-69-IVk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZMa-S1-dA8" secondAttribute="trailing" id="uFU-HL-Vpx"/>
+                            <constraint firstItem="DWU-Py-hGd" firstAttribute="leading" secondItem="NKB-A3-f7u" secondAttribute="leading" constant="16" id="6eq-jP-xLt"/>
+                            <constraint firstItem="4jb-GF-MgD" firstAttribute="leading" secondItem="NKB-A3-f7u" secondAttribute="leadingMargin" id="7kn-mv-jdG"/>
+                            <constraint firstItem="j6O-77-EVS" firstAttribute="top" secondItem="4jb-GF-MgD" secondAttribute="bottom" id="Adv-7s-cMf"/>
+                            <constraint firstAttribute="trailing" secondItem="DWU-Py-hGd" secondAttribute="trailing" constant="16" id="F2l-Bl-nCM"/>
+                            <constraint firstItem="4jb-GF-MgD" firstAttribute="top" secondItem="DWU-Py-hGd" secondAttribute="bottom" constant="30" id="Jfp-i5-u1x"/>
+                            <constraint firstAttribute="trailing" secondItem="mCC-20-GPG" secondAttribute="trailing" id="Y6U-nE-v7S"/>
+                            <constraint firstItem="mCC-20-GPG" firstAttribute="top" secondItem="WmN-If-ePo" secondAttribute="bottom" constant="40" id="jEf-tl-T4Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4jb-GF-MgD" secondAttribute="trailing" id="jbF-8D-GFi"/>
+                            <constraint firstItem="mCC-20-GPG" firstAttribute="leading" secondItem="NKB-A3-f7u" secondAttribute="leading" id="xM6-z1-3Jx"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="promatView" destination="K14-kV-Dhr" id="o1p-gY-a9M"/>
+                        <outlet property="mp4ImageView" destination="mCC-20-GPG" id="ZBM-9e-dVK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IJa-tW-IUm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="986"/>
+            <point key="canvasLocation" x="116" y="985.45727136431788"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="av.jpg" width="450" height="250"/>
+    </resources>
 </document>

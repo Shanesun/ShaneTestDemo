@@ -20,12 +20,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SSMultimediaDataFlow/MoveFullTransition.m"
-            timestampString = "509447908.859169"
+            timestampString = "509965646.438154"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "-animateTransition:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SSMultimediaDataFlowDemo/TestCollectionViewController.m"
+            timestampString = "510719508.974692"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-collectionView:didSelectItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

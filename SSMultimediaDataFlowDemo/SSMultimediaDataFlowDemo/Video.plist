@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>id</key>
+		<string>0</string>
+		<key>url</key>
+		<string>http://v7.pstatp.com/d845ae31928ad39fe370e5d0f32ea4ef/58ae425c/video/m/2204c28267f1f5e4b7aaa057c42fd90c8b91142e5600000ffe1bcf5cc1/</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>1</string>
+		<key>url</key>
+		<string>http://v7.pstatp.com/3d6682a7c04fe1abb4399eb35fd5fdc2/58ae42bb/video/m/2208eb23ad13a6e4de5ab1e99a4d527c61211439f800002747fbf0763f/</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>2</string>
+		<key>url</key>
+		<string>http://v7.pstatp.com/d4fb8cb62eec59f98c052ff6138427e5/58ae42bb/video/m/220971e15f73d5c4f4ba12c4a85bc3e02751143843000029ca34a8b45e/</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>3</string>
+		<key>url</key>
+		<string>http://v7.pstatp.com/63028eeae6ed859de1723f7c89fe1a80/58ae42c9/video/m/2200b017affeb214a659eee243d201e7d4811439ee0000143470f64de4/</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>4</string>
+		<key>url</key>
+		<string>http://v7.pstatp.com/8b65def09d1f1b84575e607d506c20be/58ae42c9/video/m/114393e00002bdb3b9d279d2207534c6d60b10434bb57a4a6f3714eb06/</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>5</string>
+		<key>url</key>
+		<string>http://v7.pstatp.com/a1bc68f8e7d7ad2b9a75b82bbaa6e702/58ae42ca/video/m/220d0da0f921cfa4a7aaf6691ea1f81ae7c11436c9000011de11074c48/</string>
+	</dict>
+	<dict>
+		<key>id</key>
+		<string>6</string>
+		<key>url</key>
+		<string>http://v7.pstatp.com/6d6ac3ee1977ac63237eb3eaa425382b/58ae443f/video/m/2208bfeda662ef04be2957acde0fad687301142e4f0000215ca8482f6d/</string>
+	</dict>
+</array>
+</plist>

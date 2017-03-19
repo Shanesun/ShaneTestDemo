@@ -1,0 +1,6 @@
+framework module Pods_TestYYImageView {
+  umbrella header "Pods-TestYYImageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

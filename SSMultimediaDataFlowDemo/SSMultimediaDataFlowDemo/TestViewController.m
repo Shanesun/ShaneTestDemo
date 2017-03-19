@@ -8,9 +8,14 @@
 
 #import "TestViewController.h"
 #import "Masonry.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface TestViewController ()
-@property (weak, nonatomic) IBOutlet UIView *promatView;
+@property (weak, nonatomic) IBOutlet UIImageView *mp4ImageView;
+
+@property (strong, nonatomic) AVPlayerLayer *playerLayer;
+@property (strong, nonatomic) AVPlayer *player;
+@property (assign, nonatomic) BOOL muted;
 
 @end
 
@@ -19,45 +24,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient withOptions:0 error:nil];
+}
+
+- (void)setMuted:(BOOL)muted {
+    if (!muted) {
+        [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategorySoloAmbient withOptions:0 error:nil];
+    }
     
-  
+    self.player.muted = muted;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 - (IBAction)buttonClicked:(id)sender {
- 
-    [self.promatView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view);
-        make.top.equalTo(self.view).offset(40);
-        make.size.mas_equalTo(CGSizeMake(50, 50));
-    }];
-    
-//    [self.promatView layoutIfNeeded];
-    
-    
-    [self.promatView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view);
-        make.top.equalTo(self.view).offset(240);
-        make.size.mas_equalTo(CGSizeMake(150, 150));
-    }];
-    
-    [UIView animateWithDuration:0.5 animations:^{
-        [self.promatView.superview layoutIfNeeded];
-    }];
-    
+    if (self.player.status == AVPlayerStatusReadyToPlay) {
+        self.muted = YES;
+        [self.player play];
+    }
+    else{
+        self.player = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:@"http://172.16.0.211/l"]];
+        
+        self.playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.player];
+        self.playerLayer.frame = self.mp4ImageView.bounds;
+        [self.mp4ImageView.layer addSublayer:self.playerLayer];
+        
+        self.muted = YES;
+        [self.player play];
+    }
+
+}
+- (IBAction)pauseButtonClicked:(id)sender {
+     [self.player pause];
 }
 
 @end

@@ -66,10 +66,8 @@ static CGFloat const kTransitionDuration = 0.4;
     // 2 使用 view 保存 contstrains和superView
     self.orginVideobackView = [UIView new];
     self.orginVideobackView.backgroundColor = [UIColor blueColor];
-//    self.orginVideobackView.hidden = YES;
     [self.videoBackgroundView.superview addSubview:self.orginVideobackView];
     [self.orginVideobackView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.leading.bottom.right.equalTo(self.videoBackgroundView);
         make.leading.mas_equalTo(self.videoBackgroundView.frame.origin.x);
         make.top.mas_equalTo(self.videoBackgroundView.frame.origin.y);
         make.size.mas_equalTo(self.videoBackgroundView.frame.size);

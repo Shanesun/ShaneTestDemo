@@ -25,6 +25,9 @@
 		3488D5DC1E5BE3F0007C309D /* SSVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3488D5DA1E5BE3F0007C309D /* SSVideoViewController.m */; };
 		3488D5DD1E5BE3F0007C309D /* SSVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3488D5DB1E5BE3F0007C309D /* SSVideoViewController.xib */; };
 		3488D5E01E5C42FE007C309D /* MoveFullTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3488D5DF1E5C42FE007C309D /* MoveFullTransition.m */; };
+		348FD5B31E82120C005482F1 /* tt.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 348FD5B21E82120C005482F1 /* tt.mp4 */; };
+		348FD5B51E821284005482F1 /* tt2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 348FD5B41E821284005482F1 /* tt2.mp4 */; };
+		348FD5B71E821A52005482F1 /* yy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 348FD5B61E821A52005482F1 /* yy.mp4 */; };
 		34DFAADC1E6FAFCC00A9FFAB /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DFAADB1E6FAFCC00A9FFAB /* TestCollectionViewController.m */; };
 		36D57A202DB987B269F75E0E /* Pods_SSMultimediaDataFlowDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D59D5F05B249FC02776706A /* Pods_SSMultimediaDataFlowDemo.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,9 @@
 		3488D5DB1E5BE3F0007C309D /* SSVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSVideoViewController.xib; sourceTree = "<group>"; };
 		3488D5DE1E5C42FE007C309D /* MoveFullTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveFullTransition.h; sourceTree = "<group>"; };
 		3488D5DF1E5C42FE007C309D /* MoveFullTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveFullTransition.m; sourceTree = "<group>"; };
+		348FD5B21E82120C005482F1 /* tt.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tt.mp4; sourceTree = "<group>"; };
+		348FD5B41E821284005482F1 /* tt2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tt2.mp4; sourceTree = "<group>"; };
+		348FD5B61E821A52005482F1 /* yy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yy.mp4; sourceTree = "<group>"; };
 		34DFAADA1E6FAFCC00A9FFAB /* TestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
 		34DFAADB1E6FAFCC00A9FFAB /* TestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
 		5D59D5F05B249FC02776706A /* Pods_SSMultimediaDataFlowDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSMultimediaDataFlowDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +133,9 @@
 				3481220C1E5D723F00EF4429 /* TestViewController.m */,
 				34DFAADA1E6FAFCC00A9FFAB /* TestCollectionViewController.h */,
 				34DFAADB1E6FAFCC00A9FFAB /* TestCollectionViewController.m */,
+				348FD5B41E821284005482F1 /* tt2.mp4 */,
+				348FD5B21E82120C005482F1 /* tt.mp4 */,
+				348FD5B61E821A52005482F1 /* yy.mp4 */,
 				348122121E5EC79900EF4429 /* av.jpg */,
 			);
 			path = SSMultimediaDataFlowDemo;
@@ -226,10 +235,13 @@
 			files = (
 				3488D5CC1E5BDD2B007C309D /* LaunchScreen.storyboard in Resources */,
 				3488D5D81E5BDEFB007C309D /* VideoCell.xib in Resources */,
+				348FD5B71E821A52005482F1 /* yy.mp4 in Resources */,
+				348FD5B51E821284005482F1 /* tt2.mp4 in Resources */,
 				3488D5C91E5BDD2B007C309D /* Assets.xcassets in Resources */,
 				3488D5C71E5BDD2B007C309D /* Main.storyboard in Resources */,
 				348122131E5EC79900EF4429 /* av.jpg in Resources */,
 				3417C53E1E5C5B0F00BD878C /* lena512.jpg in Resources */,
+				348FD5B31E82120C005482F1 /* tt.mp4 in Resources */,
 				347DED801E72AAFF000DB1DF /* 177cM5wVO.jpg in Resources */,
 				3481220F1E5E7CFC00EF4429 /* Video.plist in Resources */,
 				3488D5DD1E5BE3F0007C309D /* SSVideoViewController.xib in Resources */,
@@ -419,8 +431,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FY9VNRD73A;
 				INFOPLIST_FILE = SSMultimediaDataFlowDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shaneli.homedepot;
+				PRODUCT_BUNDLE_IDENTIFIER = shaneli.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -432,8 +445,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FY9VNRD73A;
 				INFOPLIST_FILE = SSMultimediaDataFlowDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = shaneli.homedepot;
+				PRODUCT_BUNDLE_IDENTIFIER = shaneli.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

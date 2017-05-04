@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kex-Qf-UGe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--test webview memery-->
+        <scene sceneID="DoD-s5-sBH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jf8-p2-1AA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="Ufi-jY-eQ5" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mAc-0M-shc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="J9f-Lc-Y9m">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CLL-Eb-v0w">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CLL-Eb-v0w" id="WKH-Kk-IjQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LU-Bq-drA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <state key="normal" title="UIWebView"/>
+                                                    <connections>
+                                                        <segue destination="obo-FD-m91" kind="show" id="4d6-Dv-Nqj"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="2LU-Bq-drA" secondAttribute="bottom" id="WJ0-aM-4rV"/>
+                                                <constraint firstAttribute="trailing" secondItem="2LU-Bq-drA" secondAttribute="trailing" id="ZoV-6Q-jTZ"/>
+                                                <constraint firstItem="2LU-Bq-drA" firstAttribute="top" secondItem="WKH-Kk-IjQ" secondAttribute="top" id="nrW-45-DI9"/>
+                                                <constraint firstItem="2LU-Bq-drA" firstAttribute="leading" secondItem="WKH-Kk-IjQ" secondAttribute="leading" id="q0Y-Og-c8j"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7RE-7d-42J">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7RE-7d-42J" id="r0U-Ln-8PT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="han-Zn-Uhc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <state key="normal" title="WKWebView"/>
+                                                    <connections>
+                                                        <segue destination="Kas-Pd-XVf" kind="show" id="MBA-zd-JlN"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="han-Zn-Uhc" firstAttribute="top" secondItem="r0U-Ln-8PT" secondAttribute="top" id="P7O-EM-zMn"/>
+                                                <constraint firstAttribute="bottom" secondItem="han-Zn-Uhc" secondAttribute="bottom" id="bEj-3j-qDL"/>
+                                                <constraint firstAttribute="trailing" secondItem="han-Zn-Uhc" secondAttribute="trailing" id="dTL-dP-Sm0"/>
+                                                <constraint firstItem="han-Zn-Uhc" firstAttribute="leading" secondItem="r0U-Ln-8PT" secondAttribute="leading" id="v2h-rb-wUJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WGT-rG-AUG">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WGT-rG-AUG" id="Zzt-kf-qhF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Ufi-jY-eQ5" id="XSB-KD-fGS"/>
+                            <outlet property="delegate" destination="Ufi-jY-eQ5" id="SfH-6r-x7E"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="test webview memery" id="EQo-Jk-tYx"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-748" y="181"/>
+        </scene>
+        <!--Test Web View Memery View Controller-->
+        <scene sceneID="eef-aV-Sn4">
+            <objects>
+                <viewController id="obo-FD-m91" customClass="TestWebViewMemeryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bD8-di-p2E"/>
+                        <viewControllerLayoutGuide type="bottom" id="xbA-IB-jAc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BfX-P0-zxc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcT-xm-D0M">
+                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRx-J2-Qmh">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bYk-QH-DKG"/>
+                                </constraints>
+                                <state key="normal" title="开始UIWebView">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startRequestButtonClicked:" destination="obo-FD-m91" eventType="touchUpInside" id="WZx-vr-ORL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NcT-xm-D0M" secondAttribute="trailing" id="811-Hn-ubb"/>
+                            <constraint firstAttribute="trailing" secondItem="lRx-J2-Qmh" secondAttribute="trailing" id="Bbo-dz-phf"/>
+                            <constraint firstItem="NcT-xm-D0M" firstAttribute="top" secondItem="bD8-di-p2E" secondAttribute="bottom" id="ClO-l6-rUl"/>
+                            <constraint firstItem="xbA-IB-jAc" firstAttribute="top" secondItem="NcT-xm-D0M" secondAttribute="bottom" constant="40" id="Da0-Ld-66B"/>
+                            <constraint firstItem="xbA-IB-jAc" firstAttribute="top" secondItem="lRx-J2-Qmh" secondAttribute="bottom" id="bys-3N-hez"/>
+                            <constraint firstItem="NcT-xm-D0M" firstAttribute="leading" secondItem="BfX-P0-zxc" secondAttribute="leading" id="fnR-pC-M66"/>
+                            <constraint firstItem="lRx-J2-Qmh" firstAttribute="leading" secondItem="BfX-P0-zxc" secondAttribute="leading" id="ikl-bC-SYz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="NcT-xm-D0M" id="Myo-lB-f5g"/>
+                        <outlet property="startRequestButton" destination="lRx-J2-Qmh" id="OW2-lL-B8J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4db-6w-9lt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="-93"/>
+        </scene>
+        <!--Test Web View Memery View Controller-->
+        <scene sceneID="dMx-h8-YI5">
+            <objects>
+                <viewController id="Kas-Pd-XVf" customClass="TestWebViewMemeryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FeG-kP-wVM"/>
+                        <viewControllerLayoutGuide type="bottom" id="bSd-ZO-IAJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="icd-MR-BKl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIF-DL-XT7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
+                            </scrollView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERa-of-9yn">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="raS-HW-9eG"/>
+                                </constraints>
+                                <state key="normal" title="开始WKWebView">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startRequestButtonClicked:" destination="Kas-Pd-XVf" eventType="touchUpInside" id="FE2-Lr-vNn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bSd-ZO-IAJ" firstAttribute="top" secondItem="ERa-of-9yn" secondAttribute="bottom" id="2Rk-1Q-16k"/>
+                            <constraint firstAttribute="trailing" secondItem="GIF-DL-XT7" secondAttribute="trailing" id="6Xd-DL-a3Q"/>
+                            <constraint firstItem="GIF-DL-XT7" firstAttribute="leading" secondItem="icd-MR-BKl" secondAttribute="leading" id="7Zm-Ok-den"/>
+                            <constraint firstItem="ERa-of-9yn" firstAttribute="leading" secondItem="icd-MR-BKl" secondAttribute="leading" id="DDj-ea-Wdw"/>
+                            <constraint firstAttribute="trailing" secondItem="ERa-of-9yn" secondAttribute="trailing" id="Fny-wC-WmZ"/>
+                            <constraint firstItem="bSd-ZO-IAJ" firstAttribute="top" secondItem="GIF-DL-XT7" secondAttribute="bottom" constant="40" id="fGP-x7-Oqn"/>
+                            <constraint firstItem="GIF-DL-XT7" firstAttribute="top" secondItem="FeG-kP-wVM" secondAttribute="bottom" id="hVQ-Ah-KdS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="GIF-DL-XT7" id="jsU-eW-Mux"/>
+                        <outlet property="startRequestButton" destination="ERa-of-9yn" id="bej-pD-SsJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VeJ-AX-lWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="582"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7t8-E6-hT6">
+            <objects>
+                <navigationController id="Kex-Qf-UGe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zxO-HA-fhl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ufi-jY-eQ5" kind="relationship" relationship="rootViewController" id="cUf-dc-zD0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHs-ks-pxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1699" y="181"/>
+        </scene>
+    </scenes>
+</document>

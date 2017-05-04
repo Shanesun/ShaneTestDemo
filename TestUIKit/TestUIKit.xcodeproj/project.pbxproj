@@ -25,6 +25,8 @@
 		34235F961E9CC76900114E41 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34235F8C1E9CC76900114E41 /* ViewController+MASAdditions.m */; };
 		34235F9A1E9CC78E00114E41 /* TestScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34235F981E9CC78E00114E41 /* TestScrollViewViewController.m */; };
 		34235F9B1E9CC78E00114E41 /* TestScrollViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34235F991E9CC78E00114E41 /* TestScrollViewViewController.xib */; };
+		3456848D1EBB365800C87421 /* webview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3456848C1EBB365800C87421 /* webview.storyboard */; };
+		345684901EBB378400C87421 /* TestWebViewMemeryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456848F1EBB378400C87421 /* TestWebViewMemeryViewController.m */; };
 		34D9D0461EA5E499001F919A /* TestCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D9D0441EA5E499001F919A /* TestCollectionView.m */; };
 		34D9D0471EA5E499001F919A /* TestCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D9D0451EA5E499001F919A /* TestCollectionView.xib */; };
 		34D9D0491EA61C02001F919A /* tt@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34D9D0481EA61C02001F919A /* tt@2x.jpg */; };
@@ -69,6 +71,9 @@
 		34235F971E9CC78E00114E41 /* TestScrollViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScrollViewViewController.h; sourceTree = "<group>"; };
 		34235F981E9CC78E00114E41 /* TestScrollViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScrollViewViewController.m; sourceTree = "<group>"; };
 		34235F991E9CC78E00114E41 /* TestScrollViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestScrollViewViewController.xib; sourceTree = "<group>"; };
+		3456848C1EBB365800C87421 /* webview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = webview.storyboard; sourceTree = "<group>"; };
+		3456848E1EBB378400C87421 /* TestWebViewMemeryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWebViewMemeryViewController.h; sourceTree = "<group>"; };
+		3456848F1EBB378400C87421 /* TestWebViewMemeryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebViewMemeryViewController.m; sourceTree = "<group>"; };
 		34D9D0431EA5E499001F919A /* TestCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionView.h; sourceTree = "<group>"; };
 		34D9D0441EA5E499001F919A /* TestCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionView.m; sourceTree = "<group>"; };
 		34D9D0451EA5E499001F919A /* TestCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCollectionView.xib; sourceTree = "<group>"; };
@@ -108,6 +113,7 @@
 				34235F721E9CC76900114E41 /* Vendor */,
 				34235F711E9CC73900114E41 /* UIScrollView */,
 				34D9D0421EA5E46D001F919A /* UICollectionView */,
+				3456848B1EBB362200C87421 /* WebView */,
 				34235F5D1E9CC72400114E41 /* AppDelegate.h */,
 				34235F5E1E9CC72400114E41 /* AppDelegate.m */,
 				34235F601E9CC72400114E41 /* ViewController.h */,
@@ -177,6 +183,16 @@
 				34235F8C1E9CC76900114E41 /* ViewController+MASAdditions.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		3456848B1EBB362200C87421 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				3456848C1EBB365800C87421 /* webview.storyboard */,
+				3456848E1EBB378400C87421 /* TestWebViewMemeryViewController.h */,
+				3456848F1EBB378400C87421 /* TestWebViewMemeryViewController.m */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		34D9D0421EA5E46D001F919A /* UICollectionView */ = {
@@ -253,6 +269,7 @@
 				34D9D0491EA61C02001F919A /* tt@2x.jpg in Resources */,
 				34235F6A1E9CC72400114E41 /* LaunchScreen.storyboard in Resources */,
 				34D9D0471EA5E499001F919A /* TestCollectionView.xib in Resources */,
+				3456848D1EBB365800C87421 /* webview.storyboard in Resources */,
 				34235F671E9CC72400114E41 /* Assets.xcassets in Resources */,
 				34235F651E9CC72400114E41 /* Main.storyboard in Resources */,
 			);
@@ -274,6 +291,7 @@
 				34235F621E9CC72400114E41 /* ViewController.m in Sources */,
 				34235F5F1E9CC72400114E41 /* AppDelegate.m in Sources */,
 				34235F901E9CC76900114E41 /* MASLayoutConstraint.m in Sources */,
+				345684901EBB378400C87421 /* TestWebViewMemeryViewController.m in Sources */,
 				34235F5C1E9CC72400114E41 /* main.m in Sources */,
 				34235F961E9CC76900114E41 /* ViewController+MASAdditions.m in Sources */,
 				34235F951E9CC76900114E41 /* View+MASAdditions.m in Sources */,

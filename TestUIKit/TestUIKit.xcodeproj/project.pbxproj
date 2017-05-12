@@ -27,6 +27,12 @@
 		34235F9B1E9CC78E00114E41 /* TestScrollViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34235F991E9CC78E00114E41 /* TestScrollViewViewController.xib */; };
 		3456848D1EBB365800C87421 /* webview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3456848C1EBB365800C87421 /* webview.storyboard */; };
 		345684901EBB378400C87421 /* TestWebViewMemeryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456848F1EBB378400C87421 /* TestWebViewMemeryViewController.m */; };
+		34B71D751EC00634001921CF /* 长图.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34B71D6F1EC00634001921CF /* 长图.jpg */; };
+		34B71D761EC00634001921CF /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34B71D701EC00634001921CF /* gif.gif */; };
+		34B71D771EC00634001921CF /* MP4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 34B71D711EC00634001921CF /* MP4.mp4 */; };
+		34B71D781EC00634001921CF /* 普通图1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34B71D721EC00634001921CF /* 普通图1.jpg */; };
+		34B71D791EC00634001921CF /* 普通图2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34B71D731EC00634001921CF /* 普通图2.jpg */; };
+		34B71D7A1EC00634001921CF /* 小图.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34B71D741EC00634001921CF /* 小图.jpg */; };
 		34D9D0461EA5E499001F919A /* TestCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D9D0441EA5E499001F919A /* TestCollectionView.m */; };
 		34D9D0471EA5E499001F919A /* TestCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D9D0451EA5E499001F919A /* TestCollectionView.xib */; };
 		34D9D0491EA61C02001F919A /* tt@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34D9D0481EA61C02001F919A /* tt@2x.jpg */; };
@@ -74,6 +80,12 @@
 		3456848C1EBB365800C87421 /* webview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = webview.storyboard; sourceTree = "<group>"; };
 		3456848E1EBB378400C87421 /* TestWebViewMemeryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWebViewMemeryViewController.h; sourceTree = "<group>"; };
 		3456848F1EBB378400C87421 /* TestWebViewMemeryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWebViewMemeryViewController.m; sourceTree = "<group>"; };
+		34B71D6F1EC00634001921CF /* 长图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "长图.jpg"; sourceTree = "<group>"; };
+		34B71D701EC00634001921CF /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
+		34B71D711EC00634001921CF /* MP4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MP4.mp4; sourceTree = "<group>"; };
+		34B71D721EC00634001921CF /* 普通图1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "普通图1.jpg"; sourceTree = "<group>"; };
+		34B71D731EC00634001921CF /* 普通图2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "普通图2.jpg"; sourceTree = "<group>"; };
+		34B71D741EC00634001921CF /* 小图.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "小图.jpg"; sourceTree = "<group>"; };
 		34D9D0431EA5E499001F919A /* TestCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionView.h; sourceTree = "<group>"; };
 		34D9D0441EA5E499001F919A /* TestCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionView.m; sourceTree = "<group>"; };
 		34D9D0451EA5E499001F919A /* TestCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCollectionView.xib; sourceTree = "<group>"; };
@@ -188,11 +200,25 @@
 		3456848B1EBB362200C87421 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				34B71D6E1EC00634001921CF /* test_res */,
 				3456848C1EBB365800C87421 /* webview.storyboard */,
 				3456848E1EBB378400C87421 /* TestWebViewMemeryViewController.h */,
 				3456848F1EBB378400C87421 /* TestWebViewMemeryViewController.m */,
 			);
 			path = WebView;
+			sourceTree = "<group>";
+		};
+		34B71D6E1EC00634001921CF /* test_res */ = {
+			isa = PBXGroup;
+			children = (
+				34B71D6F1EC00634001921CF /* 长图.jpg */,
+				34B71D701EC00634001921CF /* gif.gif */,
+				34B71D711EC00634001921CF /* MP4.mp4 */,
+				34B71D721EC00634001921CF /* 普通图1.jpg */,
+				34B71D731EC00634001921CF /* 普通图2.jpg */,
+				34B71D741EC00634001921CF /* 小图.jpg */,
+			);
+			path = test_res;
 			sourceTree = "<group>";
 		};
 		34D9D0421EA5E46D001F919A /* UICollectionView */ = {
@@ -265,11 +291,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B71D781EC00634001921CF /* 普通图1.jpg in Resources */,
 				34235F9B1E9CC78E00114E41 /* TestScrollViewViewController.xib in Resources */,
 				34D9D0491EA61C02001F919A /* tt@2x.jpg in Resources */,
 				34235F6A1E9CC72400114E41 /* LaunchScreen.storyboard in Resources */,
 				34D9D0471EA5E499001F919A /* TestCollectionView.xib in Resources */,
+				34B71D751EC00634001921CF /* 长图.jpg in Resources */,
 				3456848D1EBB365800C87421 /* webview.storyboard in Resources */,
+				34B71D761EC00634001921CF /* gif.gif in Resources */,
+				34B71D771EC00634001921CF /* MP4.mp4 in Resources */,
+				34B71D7A1EC00634001921CF /* 小图.jpg in Resources */,
+				34B71D791EC00634001921CF /* 普通图2.jpg in Resources */,
 				34235F671E9CC72400114E41 /* Assets.xcassets in Resources */,
 				34235F651E9CC72400114E41 /* Main.storyboard in Resources */,
 			);

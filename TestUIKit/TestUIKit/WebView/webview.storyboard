@@ -72,6 +72,16 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WGT-rG-AUG" id="Zzt-kf-qhF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N73-om-eWh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Test WKwebView load resourse"/>
+                                                    <connections>
+                                                        <segue destination="y3R-ma-y9p" kind="show" id="e15-7k-XQ2"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -96,15 +106,15 @@
                         <viewControllerLayoutGuide type="top" id="bD8-di-p2E"/>
                         <viewControllerLayoutGuide type="bottom" id="xbA-IB-jAc"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="BfX-P0-zxc">
+                    <view key="view" contentMode="scaleToFill" id="BfX-P0-zxc">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcT-xm-D0M">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="563"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRx-J2-Qmh">
-                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="563" width="375" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="bYk-QH-DKG"/>
@@ -189,6 +199,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VeJ-AX-lWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="198" y="582"/>
+        </scene>
+        <!--Test Web View Memery View Controller-->
+        <scene sceneID="6Ne-bb-8ql">
+            <objects>
+                <viewController id="y3R-ma-y9p" customClass="TestWebViewMemeryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k3L-Wh-rZl"/>
+                        <viewControllerLayoutGuide type="bottom" id="vk1-a8-6HA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VxA-sb-eaj">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfe-Ms-YfJ">
+                                <rect key="frame" x="0.0" y="563" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8qH-Zd-92M"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="seB-cL-g68"/>
+                                </constraints>
+                                <state key="normal" title="测试WK加载资源">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startRequestButtonClicked:" destination="y3R-ma-y9p" eventType="touchUpInside" id="Wa4-bn-b31"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rfe-Ms-YfJ" firstAttribute="leading" secondItem="VxA-sb-eaj" secondAttribute="leading" id="0aA-Y2-wUA"/>
+                            <constraint firstAttribute="trailing" secondItem="rfe-Ms-YfJ" secondAttribute="trailing" id="0zN-YU-qq3"/>
+                            <constraint firstItem="vk1-a8-6HA" firstAttribute="top" secondItem="rfe-Ms-YfJ" secondAttribute="bottom" id="Wb6-hO-eoK"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="startRequestButton" destination="rfe-Ms-YfJ" id="aQM-LP-iM1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01i-N9-9Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="1286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7t8-E6-hT6">

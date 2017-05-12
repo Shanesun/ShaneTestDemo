@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Masonry.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

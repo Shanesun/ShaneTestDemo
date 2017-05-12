@@ -42,6 +42,8 @@
     blueView.backgroundColor = [UIColor blueColor];
     [self.scrollView addSubview:blueView];
     
+    CGSize size = CGSizeMake(600, 900);
+    
     self.scrollView.contentSize = self.view.bounds.size;
     
     [blueView mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>萌萌哒的简笔画，手帐必学，无聊...-快上车</title>
+    <meta name="keywords" content="快上车，搞笑，糗事，美女"/>
+    <meta name="description" content="快上车app是一个在线发布和分享内涵段子、冷笑话、搞笑图片、成人笑话的热门社区，里面有最爆笑的内涵图和搞笑段子神评论，来这里与同好们相遇吧。滴滴滴，上车啦~"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="x-rim-auto-match" content="none"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="address=no;email=no"/>
+    <meta name="renderer" content="webkit"/>
+    <!-- 360 使用Google Chrome Frame -->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <!-- 禁止百度转码 -->
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <!-- windows phone 点击无高光 -->
+    <!---->
+    <link rel="shortcut icon" href="/res/common/img/favicon.ico"/>
+    <link rel="bookmark" href="/res/common/img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="/res/common/css/base.css"/>
+    <link rel="stylesheet" href="/res/common/css/userCommentDefault.css"/>
+    <link rel="stylesheet" href="/res/common/css/swiper.min.css"/>
+    <link rel="stylesheet" href="/res/share/css/share.css"/>
+</head>
+<body>
+<div class="content-wrap flex" data-flex-direction="column">
+    <header class="sec-header sec-img-lg">
+        <img src="./../../../res/share/img/header-down.png"/>
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.ningkegame.bus" class="headDown"></a>
+    </header>
+    <div class="sec-wrap flex-box-autoFix">
+        <section class="share-sec sec">
+            <header class="share-title">萌萌哒的简笔画，手帐必学，无聊...</header>
+            <div class="pub-user flex flex-align-center">
+                <div class="user-header flex-shrink-0"><img src="http://pic.cdn.kuaishangche.cc/user/avatar/5a/58b92966600255.jpeg"/></div>
+                <p class="user-name">全球奇闻趣事</p>
+                <p class="user-pub-time">18:01</p>
+            </div>
+            <article>
+                <p class="share-txt" id="share-txt">萌萌哒的简笔画，手帐必学，无聊的时候拿去玩。 ​​​​</p>
+
+                
+                <!--动态详情页的专辑标签-->
+                <div class="share-img-video">
+                    <div class="pic-wrap flex pic-row-3" data-flex-wrap="wrap"><div class='pic-clp'><img class="lazyload" src='/res/common/img/zw-img.png' data-src="http://pic.cdn.kuaishangche.cc/fastbus/1b0/eee/d86/575RTibDR.jpg"/><span class="picTips"></span></div><div class='pic-clp'><img class="lazyload" src='/res/common/img/zw-img.png' data-src="http://pic.cdn.kuaishangche.cc/fastbus/303/f89/bec/b4cy49Xph.jpg"/><span class="picTips"></span></div><div class='pic-clp'><img class="lazyload" src='/res/common/img/zw-img.png' data-src="http://pic.cdn.kuaishangche.cc/fastbus/ed6/8ae/149/ee8jVfkN4.jpg"/><span class="picTips"></span></div><div class='pic-clp'><img class="lazyload" src='/res/common/img/zw-img.png' data-src="http://pic.cdn.kuaishangche.cc/fastbus/bc8/f7a/58d/021WeDoVO.jpg"/><span class="picTips"></span></div><div class='pic-clp'><img class="lazyload" src='/res/common/img/zw-img.png' data-src="http://pic.cdn.kuaishangche.cc/fastbus/d21/7c9/5ce/49cNn08Mz.jpg"/><span class="picTips"></span></div><div class='pic-clp'><img class="lazyload" src='/res/common/img/zw-img.png' data-src="http://pic.cdn.kuaishangche.cc/fastbus/e4a/a64/dc8/8d9bNK9cv.jpg"/><span class="picTips"></span></div><div class='pic-clp'><img class="lazyload" src='/res/common/img/zw-img.png' data-src="http://pic.cdn.kuaishangche.cc/fastbus/122/71b/04b/1b4MkF2qX.jpg"/><span class="picTips"></span></div><div class='pic-clp'><img class="lazyload" src='/res/common/img/zw-img.png' data-src="http://pic.cdn.kuaishangche.cc/fastbus/a58/065/1e0/c594sg4j3.jpg"/><span class="picTips"></span></div><div class='pic-clp'><img class="lazyload" src='/res/common/img/zw-img.png' data-src="http://pic.cdn.kuaishangche.cc/fastbus/7ae/63e/7e8/8a9nsH8Sz.jpg"/><span class="picTips"></span></div></div>                </div>
+            </article>
+            <footer class="share-action flex flex-align-center pop-btn" data-pop-id="downAppLock">
+                <a href="javascript:void(0)" class="shareBtn flex-box-autoFix"><i
+                        class="icon-pic icon-share"></i><span>57</span></a>
+                <a href="javascript:void(0)" class="shareBtn flex-box-autoFix"><i
+                        class="icon-pic icon-comment"></i><span>1</span></a>
+                <a href="javascript:void(0)" class="app-down-btn flex-box-autoFix"><i
+                        class="icon-pic icon-zan"></i><span>13</span></a>
+            </footer>
+        </section>
+        <aside class="sec-space"></aside>
+        <section class="share-comment"><header class='sec'>最新评论</header><div class="comment-list-wrap">
+                 <div class="item-comment">
+                    <header class="flex flex-align-center">
+                        <div class="user-header flex-shrink-0"><img class='lazyload' data-src="" src='/res/common/img/wtx.png' /></div>
+                        <div class="user-info flex-box-autoFix">
+                            <p class="user-name">手机用户607840</p>
+                            <p class="user-pub-time">08:38</p>
+                        </div>
+                        <div class="share-action flex-shrink-0">
+                            <a href="javascript:void(0)" class="app-down-btn"><i class="icon-pic icon-zan"></i><span>0</span></a>
+                        </div>
+                    </header>
+                    <div class="comment-content">
+                        <div class="content">
+                            
+                            <p>简笔画达人啊</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                        </div></section><aside class="sec-space"></aside>        <section class="found-more">
+            <header class="sec">发现不一样</header>
+            <div id="found-list-content" class="sec found-list-content flex flex-pack-justify" data-flex-wrap="wrap">
+            </div>
+            <div class="more-loading off"></div>
+        </section>
+    </div>
+    <footer class="off" id="found-bottom-down">
+        <div class="appDownBtn pop-btn" data-pop-id="downAppLock">下载快上车 邂逅更多老司机</div>
+    </footer>
+</div>
+<div id="downAppLock" class="pop lock-screen">
+    <div class="pop-lock-download">
+        <img class="lazyload" data-src="./../../../res/share/img/down.png"/>
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.ningkegame.bus" class="down-app-btn"></a>
+        <a class="closePopBtn"></a>
+    </div>
+</div>
+<div id="sharePop" class="pop lock-screen">
+    <div class="pop-share-sec">
+        <h3 class="share-header">分享给朋友<a class="close-pop-btn closePopBtn">&times;</a></h3>
+        <div class="share-content flex" data-flex-wrap="wrap">
+            <!--<div class="item-share" data-share-type="wx">
+                <div class="item-share-pic icon-wx"></div>
+                <div class="item-share-txt">微信</div>
+            </div>-->
+            <div class="item-share" data-share-type="weibo">
+                <div class="item-share-pic icon-weibo"></div>
+                <div class="item-share-txt">微博</div>
+            </div>
+            <div class="item-share" data-share-type="qzone">
+                <div class="item-share-pic icon-qzone"></div>
+                <div class="item-share-txt">QQ空间</div>
+            </div>
+            <div class="item-share" data-share-type="qq">
+                <div class="item-share-pic icon-qq"></div>
+                <div class="item-share-txt">QQ</div>
+            </div>
+            <!--<div class="item-share" data-share-type="douban">
+                <div class="item-share-pic icon-douban"></div>
+                <div class="item-share-txt">豆瓣</div>
+            </div>-->
+            <!--<div class="item-share copyBtn" data-share-type="copy">
+                <div class="item-share-pic icon-copy"></div>
+                <div class="item-share-txt">复制链接</div>
+            </div>-->
+        </div>
+    </div>
+</div>
+<div id="msgAppArticle" class="pop lock-screen ">
+    <div class="pop-msg-box">
+        <span class="msgBox"></span>
+    </div>
+</div>
+<div id="imgShowBoxPop" class="pop lock-screen ">
+    <div class="img-show-box">
+        <header class="flex flex-pack-justify">
+            <a class="close-pop-btn icon-close closePopBtn"></a>
+            <p class="jishuan"><span class="mol"></span> / <span class="den"></span></p>
+        </header>
+        <div class="swiper-container">
+            <ul class="swiper-wrapper"></ul>
+        </div>
+    </div>
+</div>
+<script async src="/res/common/js/swiper.min.js"></script>
+<script src="/res/common/js/zepto.min.js"></script>
+<script src="/res/common/js/lazysizes.js"></script>
+<script src="/res/common/js/kscCommon.js"></script>
+<script src="/res/share/js/share.js"></script>
+<script type="text/javascript">
+    var game = 'fastbus';
+    var recommend = ["3132919636769924221","3132904054121063242","3132922987433714850","3132896743962993386","3132915422087898176","3132919162052306015","3132896573959463649","3132934335580366265","3132922986915718302","3132904096902964047","3132921154415912076","3132934337977411023","3132896489018516171","3132908072021025789","3132915402622133310","3132934168124876166","3132900398661395210","3132896777733432044","3132938051956008451","3132938497359636021","3132911639840711708","3132934313402983835","3132923005420987599","3132915379746399289","3132900294026093307","3132908009997755376","3132916957180093526","3132930551814841685","3132914663210378293","3132908048453231602","3132900737340957473","3132922966019695766","3132930721220683102","3132930702434395482","3132896532375036625","3132919162046014557","3132907880922244046","3132907878590211006","3132904159983199059","3132911619160695817","3132907862607815611","3132907888845284322","3132919184087082080","3132923349481841895","3132922966145524887","3132919627651507321","3132906836236460929","3132934334615676336","3132911618464441351","3132907878869132224","3132934334219314606","3132938496891971123","3132934548497917413","3132900201237603065","3132930552001488215","3132904075505722187","3132934340756137432","3132919162046014558","3132908048623100916","3132907858325431220","3132907880750277580","3132904307775791970","3132900356443628287","3132934313568658845","3132934292009936263","3132904083474899789","3132896533700436691","3132915444139451464","3132896686668800745","3132915379744302136","3132906315008205678","3132911618468635656","3132915422299710530","3132908050258879481","3132911619678692364","3132922944561636501","3132938095065064980","3132922988339684526","3132922990743020739","3132926748669535493","3132900759325401896","3132900758738199334","3132927024606504221","3132900271829836538","3132919631894045819","3132934335515354551","3132918651087512668","3132934597304935921","3132900294711862013","3132907836143854497","3132907836133368736","3132919194000319591","3132938074663970308","3132934295317144977","3132930710068028764","3132907880628642760","3132904183647462240","3132907880651711433","3132911703074038814","3132911705645147168"];
+    var recommendApiUrl = '/share/recommend';
+</script>
+</body>
+</html>

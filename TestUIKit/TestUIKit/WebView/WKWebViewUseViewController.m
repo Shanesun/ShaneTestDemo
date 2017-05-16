@@ -8,6 +8,7 @@
 
 #import "WKWebViewUseViewController.h"
 #import "BusRecommendDetailWebContentView.h"
+#import "Masonry.h"
 
 @interface WKWebViewUseViewController ()
 
@@ -17,7 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"testsourcecode.txt" ofType:nil];
+    NSString *h5 = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    
+    BusRecommendDetailWebContentView *view = [[BusRecommendDetailWebContentView alloc] initWithWebSourceCode:h5 delegate:self];
+    [self.view addSubview:view];
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    
+    [view startRequest];
 }
 
 - (void)didReceiveMemoryWarning {

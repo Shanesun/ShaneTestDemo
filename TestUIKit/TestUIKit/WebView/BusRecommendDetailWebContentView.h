@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol BusRecommendDetailWebContentViewDelegate <NSObject>
+
+- (void)didChangeWebContentSize:(CGSize)size;
+
+@end
+
 @interface BusRecommendDetailWebContentView : UIView
 
-- (instancetype)initWithWebSourceCode:(NSString *)webSourceCode;
+- (instancetype)initWithWebSourceCode:(NSString *)webSourceCode
+                             delegate:(id<BusRecommendDetailWebContentViewDelegate>)deledgate;
+
+- (void)startRequest;
 
 @end
